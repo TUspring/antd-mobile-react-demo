@@ -19,7 +19,7 @@ class Home extends Component {
 		{
 		  link: "https://www.github.com",
 		  thumb: "http://temp.im/94x94",
-		  title: "大牌抢购"
+		  title: "大牌购"
 		},
 		{
 		  link: "https://www.github.com",
