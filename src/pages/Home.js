@@ -99,7 +99,7 @@ class Home extends Component {
 	  }
   
 	  const { swipeList, fastNav, shopLists, messages } = this.state
-  
+	
 	  return (
 		<div ref="box" className="box">
 		  <Header />

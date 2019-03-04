@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { Nav } from '../../components'
 import styles from './index.scss'
+
+
 export default class Tour extends Component {
   render() {
     return (
@@ -9,7 +11,7 @@ export default class Tour extends Component {
           <div className={styles.title}>美文语录</div>
           <ul>
             <li className={styles.items}>
-              <img src="../../assets/images/timg.jpg" /> 
+              <img src="{../../assets/images/timg.jpg}" /> 
               <div className={styles.prompt}>
                  相信努力和时光，时光第一个辜负你，不负时光，不负自己，努力，这刻起！
               </div>
@@ -45,6 +47,7 @@ export default class Tour extends Component {
           </ul>
         </div>
         <Nav />
+        
       </div>
     )
   }

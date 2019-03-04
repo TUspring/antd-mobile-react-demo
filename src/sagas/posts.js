@@ -37,7 +37,7 @@ function fetchPostsApi(url) {
 
 /*function* fetchPosts() {
  const posts = yield call(fetchPostsApi)
- yield put({type: RECEIVE_POSTS, posts})
+ yield put({type: RECEIVE_POSTS, posts})  tuquan
  }*/
 
 /*为什么会出错误？？*/
