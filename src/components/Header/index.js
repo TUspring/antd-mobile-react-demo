@@ -4,10 +4,10 @@ import styles from './index.scss'
 
 export default class Header extends Component {
   state = {
-    autoCity: '郑州',
+    autoCity: '广州',
     searchData: {
       cityLink: '/',
-      cityName: '郑州',
+      cityName: '广州',
       searchLink: '/',
       messageLink: '/',
       messageBool: true

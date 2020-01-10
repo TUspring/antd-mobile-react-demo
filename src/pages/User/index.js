@@ -136,7 +136,8 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch => ({
   actions: bindActionCreators(PostActions, dispatch)
 })
-
+console.log(mapStateToProps)
+console.log(mapDispatchToProps)
 export default connect(
   mapStateToProps,
   mapDispatchToProps

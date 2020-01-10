@@ -5,7 +5,7 @@ export default class Item extends Component {
   constructor(props) {
     super(props);
     this.state = { focus: 0 };
-    this.interval = setInterval(() => this.tick(), 2000);
+    this.interval = setInterval(() => this.tick(), 4000);
   }
 
   tick() {
@@ -26,8 +26,8 @@ export default class Item extends Component {
     return (
       <ReactCSSTransitionGroup
         transitionName="message"
-        transitionEnterTimeout={500}
-        transitionLeaveTimeout={300}
+        transitionEnterTimeout={4000}
+        transitionLeaveTimeout={500}
       >
         {data.map((item, index) => {
           if(this.state.focus === index) {

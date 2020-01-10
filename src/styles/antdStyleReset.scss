@@ -39,9 +39,13 @@
 .am-radio-inner {
   right: 3px;
 }
+.am-button-primary{
+  border-color: #1abc9c;
+}
 .am-button-primary:after {
   border-color: #1abc9c;
 }
+
 .am-button-primary.am-button-touchFeedback {
   background-color: #18ac8f;
 }

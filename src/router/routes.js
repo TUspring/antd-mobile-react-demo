@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route, IndexRoute } from 'react-router'
+import { Route, IndexRoute, Lifecycle } from 'react-router'
 
 import {
   App,
@@ -10,6 +10,7 @@ import {
   User,
   NotFoundPage,
 } from '../pages'
+import { Login } from '../components'
 
 export default (
   <Route path="/" component={App}>
@@ -20,6 +21,7 @@ export default (
     </Route>
     <Route path="tour" component={Tour}/>
     <Route path="user" component={User}/>
+    <Route path="login" component={Login}/>
     <Route path="*" component={NotFoundPage}/>
   </Route>
 );

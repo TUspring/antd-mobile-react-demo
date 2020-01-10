@@ -77,7 +77,9 @@ ul, ol, li {
 html, body {
   -webkit-tap-highlight-color: transparent;
 }
-
+html,body,#app{
+  height: 100%;
+}
 body {
   font-family: $font-family-zh;
   line-height: 1.5;

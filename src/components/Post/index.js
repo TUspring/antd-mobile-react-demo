@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import styles from './index.scss'
 const Post = props => {
+  console.log(props)
   return (
     <div>
       {
