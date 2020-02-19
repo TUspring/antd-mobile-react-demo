@@ -16,18 +16,20 @@ export default class Login extends Component {
     return (
       <div className={styles.root}>
         <div className={styles.loginBox}>
-          <div>
-            <InputItem placeholder="账号">
+          <div className={styles.avatarBox}> 
+            <div className={styles.avatarBg}></div>
+          </div>
+          <div className={styles.inputBox}>
+            <InputItem placeholder="账号" className={styles.inputItem}>
               <i className={`iconfont icon-zhanghao ${styles.icon}`} />
             </InputItem>
-            <InputItem placeholder="密码" type="password">
+            <InputItem placeholder="密码" type="password" className={`inputLine ${styles.inputItem}`}>
               <i className={`iconfont icon-mima ${styles.icon}`} />
             </InputItem>
           </div>
 
           <div className={styles.loginBtn}>
             <Link to="/">
-              
               <Button type="primary" onClick={this.login}>登录</Button>
             </Link>
           </div>

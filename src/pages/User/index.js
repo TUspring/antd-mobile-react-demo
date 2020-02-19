@@ -7,6 +7,7 @@ import { bindActionCreators } from 'redux'
 import classnames from 'classnames'
 import { connect } from 'react-redux'
 import * as PostActions from 'app/actions/PostActions'
+import * as CounterActions from 'app/actions/CounterActions'
 
 class User extends Component {
   state = {
@@ -22,6 +23,7 @@ class User extends Component {
 
   componentDidMount(){
     this.props.actions.onRequestPosts()
+    this.props.other_actions.increment()
     this.setState({scrollReloadHeight:this.refs.scrollReload.offsetHeight})
   }
 
@@ -134,7 +136,8 @@ const mapStateToProps = state => ({
 })
 
 const mapDispatchToProps = dispatch => ({
-  actions: bindActionCreators(PostActions, dispatch)
+  actions: bindActionCreators(PostActions, dispatch),
+  other_actions: bindActionCreators(CounterActions, dispatch)
 })
 
 export default connect(
